@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    --font-outfit: 'Outfit', sans-serif;
+    --color-gradient: linear-gradient(44deg, #FEE1FF 0%, #7197F7 100%);
+}
+button{
+    font-family: var(--font-outfit);
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #B288EA;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-track {
+    background: #cecece;
+}
+
+
+/* Animações  */
+@keyframes erro {
+    10%,90% {transform: rotateY(-180deg) translateX(-1px);}
+    20%,80% {transform: rotateY(-180deg) translateX(2px);}
+    30%,50%,70% {transform: rotateY(-180deg) translateX(-4px);}
+    40%,60% {transform: rotateY(-180deg) translateX(4px);}
+}
+@keyframes acerto {
+    0% {transform: scale(1) rotateY(-180deg);}
+    50% {transform: scale(1.1) rotateY(-180deg);}
+    100% {transform: scale(1) rotateY(-180deg);}
+}
+@keyframes fade-in-move-down{
+    0% {opacity: 0; transform: translateY(-5rem);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+.anime-down{
+    opacity: 0;
+    animation-name: fade-in-move-down;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+
+.container-game{
+    background: var(--color-gradient);
+    min-height: 100vh;
+    font-family: var(--font-outfit);
+}
+/* Header */
+header{
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+}
+header .wrapper{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+header .wrapper .box{
+    display: flex;
+}
+header h4{
+    color: #6A6A6A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+header .cronometro-numeros, header .contador-numeros, header .contador-niveis{
+    color: #B288EA;
+    font-family: var(--font-outfit);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+header .cronometro-numeros{
+    min-width: 200px;
+}
+header span{
+    letter-spacing: -2px;
+}
+/*Modal*/
+.modal.active{
+    display: flex!important;
+}
+.modal {
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+}
+.modal .box{
+    border-radius: 15.93px;
+    background: #FFF;
+    width: 52%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal h2{
+    color: #BABDFB;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.modal h3{
+    color: #B288EA;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+.modal button{
+    width: 250px;
+    height: 55px;
+    border-radius: 29.984px;
+    border: 2px solid #B288EA;
+    background: #FFF;
+    color: #B288EA;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 12px 0 0 0;
+    cursor: pointer;
+    transition: all .2s ease;
+    font-weight: 500;
+}
+.modal button#avancar, .modal button.continuar{
+    background: #E888EA;
+    border: 2px solid #E888EA;
+    color: #fff;
+}
+.modal button#avancar:hover, .modal button.continuar:hover{
+    border: 2px solid #E888EA;
+}
+.modal button:hover{
+    background: #B288EA;
+    color: #fff;
+}
+/* Frases */
+.frases {
+    display: none;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+    padding: 18px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.frases h2{
+    color: #fff;
+    font-family: Outfit;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    background: transparent;
+    width: 800px;
+    text-align: center;
+    padding: 14px;
+    border-radius: 15px;
+    /* border: 3px solid #fff; */
+}
+.frases h3{
+    font-size: 40px;
+    line-height: 0;
+    color: #fff;
+    font-weight: bold;
+}
+/*Cards*/
+#mesa {
+    padding-top: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    width: 75%;
+    display: none;
+}
+#mesa > div {
+    margin: 8px;
+}
+.card {
+    background: url(imgs/img-patinha.png);
+    background-size: contain;
+    background-position: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: .2s ease;
+    width: 165px;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 14px;
+    border: 7px solid #FFF;
+}
+
+.card.active {
+    transform: rotateY(-180deg);
+}
+.card_container {
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    border: 7px solid #FFF;
+    font-size: 25px;
+}
+.card_container img {
+    width: 165px;
+    border-radius: 5px;
+}
+.acerto {
+    animation: acerto .5s;
+}
+.erro {
+    animation: erro 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.sonido {
+    display: none;
+}
+/*Copy*/
+.copy{
+    position: relative;
+    bottom: -28px;
+    width: 100%;
+    right: 0;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.copy p {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.copy a{
+    margin: 0 2px 0 0;
+}
+.copy svg{
+    width: 30px;
+    fill: #fff;
+    opacity: .8;
+}
+.copy a:first-child svg{
+    width: 35px;
+}
+.copy a:first-child{
+    margin: 0;
+}
+.copy svg:hover{
+    opacity: 1;
+}
+.icons-copy{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}

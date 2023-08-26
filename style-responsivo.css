@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1160px) {
+    .container-game{
+        padding-bottom: 50px;
+    }
+    .modal .box{
+        width: 80%;
+    }
+    .modal .box{
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .modal .box img{
+        width: 85%;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    header .wrapper{
+        width: 95%;
+    }
+    .frases{
+        width: 90%;
+        margin-top: 0;
+    }
+    .frases h2{
+        display: none!important;
+    }
+    #mesa{
+        min-height: auto;
+    }
+    .card{
+        width: 120px;
+        height: 120px;
+    }
+    .card_container img{
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header .cronometro-numeros, header .contador-numeros, header .contador-niveis{
+        font-size: 35px;
+    }
+    header .cronometro-numeros {
+        min-width: 155px;
+    }
+    .modal{
+        top: 20%;
+    }
+    .card{
+        width: 100px;
+        height: 100px;
+    }
+    .card_container img{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    header .cronometro-numeros, header .contador-numeros, header .contador-niveis {
+        font-size: 30px;
+    }
+    header .cronometro-numeros {
+        min-width: 110px;
+    }
+    header h4{
+        font-size: 14px;
+    }
+    #mesa{
+        width: 93%;
+    }
+    .frases h3{
+        font-size: 33px;
+    }
+    .card{
+        width: 80px;
+        height: 80px;
+    }
+    .card_container img{
+        width: 80px;
+    }
+    .modal h2{
+        font-size: 25px;
+    }
+    .modal h3{
+        font-size: 20px;
+    }
+    .modal button{
+        width: 100%;
+        padding: 10px;
+        height: 45px;
+    }
+    .modal .box img{
+        width: 95%;
+    }
+}
+
+
+@media (max-height: 900px) {
+    .container-game{
+        padding-bottom: 50px;
+    }
+    
+}
+
+@media (max-height: 800px) {
+    .frases{
+        margin-top: 0;
+    }
+    #mesa{
+        min-height: auto;
+    }
+    
+}
