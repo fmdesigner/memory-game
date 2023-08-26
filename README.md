@@ -2,10 +2,9 @@
 
 ✨ Projeto pessoal <br>
 💻 Desenvolvido com Javascript <br>
-🎨 Ilustrado no Adobe Photoshop <br>
+🎨 Ilustrado no Adobe Photoshop <br><br>
 🐱 Avançe por 3 níveis para encontrar todos os pares de gatinhos <br>
-
-🎮 <a href="#">Jogar!</a>
+🎮 <a href="https://fmdesigner.github.io/memory-game">Jogar!</a>
 
 ### Tecnologias usadas
 <br>
