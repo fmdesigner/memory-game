@@ -6,8 +6,9 @@ function iniciar() {
     document.querySelector('.frases').style.display = 'flex';
     document.querySelector('.mesa').style.display = 'flex';
     document.querySelector('#mov').innerText = '00';
-     document.querySelector('#minutos').innerText = '00';
+    document.querySelector('#minutos').innerText = '00';
     document.querySelector('#segundos').innerText = '00';
+    
 
     maxContador();
     cardsVisible();
@@ -22,7 +23,6 @@ function iniciar() {
         elemento.addEventListener('click', descobrir);
     })
 
-    
 
 }
 
@@ -63,6 +63,7 @@ function reiniciar() {
     iniciar();
     segundos = 60;
     minutos = 0;
+    document.querySelector('#nivel').style.display = '';
 }
 
 /*Botões Iniciar, Reiniciar, Avançar e Continuar*/

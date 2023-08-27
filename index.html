@@ -44,11 +44,12 @@
                     <h4 class="contador-titulo">Nível</h4>
                     <div class="nivel-text">01</div>
                 </div>
+
+                <button class="pause-audio" title="Play Music"></button>
             </div>
         </header>
         
         <div class="frases anime-down">
-            <h2></h2>
             <h3></h3>
         </div>
         
@@ -111,11 +112,14 @@
         </div>
        
         <!-- Audio -->
+        <audio src="sonidos/bit-symphony-roljui.mp3" class="sonido" id="musica-fundo" preload="auto"></audio>
         <audio src="sonidos/acierto.mp3" class="sonido" id="sonido-acierto" preload="auto"></audio>
         <audio src="sonidos/error.mp3" class="sonido" id="sonido-error" preload="auto"></audio>
         <audio src="sonidos/carta.mp3" class="sonido" id="sonido-carta" preload="auto"></audio>
     </div>
 
+   
+    <script src="musica.js"></script>
     <script src="variaveis.js"></script>
     <script src="embaralhar-e-repartir.js"></script>
     <script src="descobrir-e-comparar.js"></script>

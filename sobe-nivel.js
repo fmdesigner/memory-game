@@ -23,12 +23,14 @@ function novoNivel() {
 
 function continuarNivel() {
     
-    var nivelTexto = nivelAtual;
+    var nivelTexto = nivelAtual + 1;
     if (nivelTexto < 10) {
         nivelTexto = '0' + nivelTexto;
     }
     document.querySelector('.nivel-text').innerText = nivelTexto;
-    document.querySelector('.gameOver').style.display = 'none';
+    document.querySelector('.gameOver').classList.remove('active');
+    document.querySelector('#nivel').classList.remove('active');
+    document.querySelector('#nivel').style.display = '';
     
     
     iniciar();

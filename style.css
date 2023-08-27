@@ -55,21 +55,23 @@ button{
 header{
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-    padding: 20px 0;
+    padding: 10px 0;
+    
 }
 header .wrapper{
-    width: 800px;
+    width:770px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    position: relative;
 }
 header .wrapper .box{
     display: flex;
 }
 header h4{
     color: #6A6A6A;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -79,10 +81,10 @@ header h4{
 header .cronometro-numeros, header .contador-numeros, header .contador-niveis{
     color: #B288EA;
     font-family: var(--font-outfit);
-    font-size: 48px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height:1;
     text-transform: uppercase;
 }
 header .cronometro-numeros{
@@ -91,10 +93,30 @@ header .cronometro-numeros{
 header span{
     letter-spacing: -2px;
 }
-/*Modal*/
-.modal.active{
-    display: flex!important;
+header button {
+    position: absolute;
+    right: -98px;
+    top: 10px;
+    z-index: 2;
+    border: 0;
+    width: 29px;
+    height: 50px;
+    cursor: pointer;
+    background: url(imgs/icon-mute.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+header button.play{
+    background: url(imgs/icon-play.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/*Modal*/
 .modal {
     display: none;
     width: 100%;
@@ -102,6 +124,9 @@ header span{
     justify-content: center;
     position: relative;
     margin-top: 30px;
+}
+.modal.active{
+    display: flex;
 }
 .modal .box{
     border-radius: 15.93px;
@@ -163,7 +188,7 @@ header span{
     justify-content: center;
     width: 800px;
     margin: 0 auto;
-    padding: 18px 0;
+    padding: 10px 0;
     box-sizing: border-box;
     border-radius: 20px;
     margin-top: 50px;
@@ -201,7 +226,7 @@ header span{
     align-items: center;
     justify-content: center;
     min-height: 320px;
-    width: 75%;
+    width:800px;
     display: none;
 }
 #mesa > div {

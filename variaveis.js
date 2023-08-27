@@ -14,22 +14,19 @@ var niveis = [
         cards: grupoCards[0],
         maxMovimentos: 3,
         minutos: 0,
-        segundos: 30,
-        frase: 'Encontre os pares dos gatinhos para passar de Nível!'
+        segundos: 30
     },
     {
         cards: grupoCards[0].concat(grupoCards[1]),
         maxMovimentos: 8,
         minutos: 0,
-        segundos: 60,
-        frase: 'Nível 2! Encontre todos os pares!',
+        segundos: 60
         
     },
     {
         cards: grupoCards[0].concat(grupoCards[1], grupoCards[2]),
         maxMovimentos: 12,
         minutos: 1,
-        segundos: 30,
-        frase: 'Nível final! Boa sorte!'
+        segundos: 30
     }
 ];

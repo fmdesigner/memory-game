@@ -2,6 +2,9 @@
     .container-game{
         padding-bottom: 50px;
     }
+    #mesa{
+        width:82%;
+    }
     .modal .box{
         width: 80%;
     }
@@ -11,6 +14,9 @@
     }
     .modal .box img{
         width: 85%;
+    }
+    header button{
+        right: -50px;
     }
     
 }
@@ -28,6 +34,7 @@
     }
     #mesa{
         min-height: auto;
+        width: 90%;
     }
     .card{
         width: 120px;
@@ -35,6 +42,9 @@
     }
     .card_container img{
         width: 120px;
+    }
+    header button{
+        display: none;
     }
 }
 
@@ -68,7 +78,10 @@
         font-size: 14px;
     }
     #mesa{
-        width: 93%;
+        width: 100%;
+    }
+    #mesa > div {
+        margin: 4px;
     }
     .frases h3{
         font-size: 33px;

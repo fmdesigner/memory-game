@@ -60,5 +60,4 @@ function maxContador() {
         movimentosMaxText = '0' + movimentosMaxText;
     }
     document.querySelector('#mov-total').innerText = movimentosMaxText;
-    document.querySelector('.frases h2').innerText = fraseText;
 }
