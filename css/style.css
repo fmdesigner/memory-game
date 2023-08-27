@@ -102,13 +102,13 @@ header button {
     width: 29px;
     height: 50px;
     cursor: pointer;
-    background: url(imgs/icon-mute.png);
+    background: url(../imgs/icon-mute.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 header button.play{
-    background: url(imgs/icon-play.png);
+    background: url(../imgs/icon-play.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
