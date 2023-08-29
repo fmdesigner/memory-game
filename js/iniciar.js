@@ -64,6 +64,7 @@ function reiniciar() {
     segundos = 60;
     minutos = 0;
     document.querySelector('#nivel').style.display = '';
+    document.querySelector('#endGame').style.display = '';
 }
 
 /*Botões Iniciar, Reiniciar, Avançar e Continuar*/

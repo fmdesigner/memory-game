@@ -5,6 +5,7 @@ function gameOver() {
   
   document.querySelector('#gameOver').classList.add('active');
   document.querySelector('#nivel').style.display = 'none';
+  document.querySelector('#endGame').style.display = 'none';
   document.querySelector('.mesa').style.display = 'none',
   document.querySelector('.frases').style.display = 'none',
 

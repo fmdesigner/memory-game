@@ -31,6 +31,7 @@ function continuarNivel() {
     document.querySelector('.gameOver').classList.remove('active');
     document.querySelector('#nivel').classList.remove('active');
     document.querySelector('#nivel').style.display = '';
+    document.querySelector('#endGame').style.display = '';
     
     
     iniciar();
