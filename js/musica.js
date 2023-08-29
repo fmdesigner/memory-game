@@ -16,6 +16,7 @@ function togglePlay() {
 myAudio.onplaying = function() {
     isPlaying = true;
     myAudio.volume = 0.08;
+    myAudio.loop = true;
 };
 myAudio.onpause = function() {
     isPlaying = false;
